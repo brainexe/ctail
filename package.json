@@ -1,0 +1,31 @@
+{
+  "name": "ctail",
+  "version": "0.1.0",
+  "description": "Colorized tail",
+  "main": "ctail.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brainexe/ctail.git"
+  },
+  "keywords": [
+    "tail",
+    "color"
+  ],
+  "dependencies": {
+    "colors": "^1.1.0",
+    "glob": "^5.0.6",
+    "nomnom": "^1.8.1",
+    "tail": "~0.4"
+  },
+  "bin": {
+    "ctail": "./ctail.js"
+  },
+  "author": "Matthias Dötsch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brainexe/ctail/issues"
+  }
+}
