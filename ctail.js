@@ -1,10 +1,10 @@
+#!/usr/bin/env node
+
 var
     Tail = require('tail').Tail,
     glob = require("glob"),
     colors = require('colors'),
     nomnom = require("nomnom");
-
-console.log(colors);
 
 var opts = nomnom
     .option('files', {
@@ -39,8 +39,6 @@ var availableColors = [
 ];
 
 glob(files, {}, function(error, files) {
-    console.log(error);
-    console.log(files);
     files.forEach(function(file) {
 
         var color = availableColors[colorIdx++ % availableColors.length];
