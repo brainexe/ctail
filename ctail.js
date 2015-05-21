@@ -39,6 +39,11 @@ var availableColors = [
 ];
 
 glob(files, {}, function(error, files) {
+    if (0 === files.length) {
+        console.error(colors.red('No files matched your pattern'));
+        return;
+    }
+
     files.forEach(function(file) {
 
         var color = availableColors[colorIdx++ % availableColors.length];
@@ -62,7 +67,7 @@ glob(files, {}, function(error, files) {
         });
 
         tail.on("error", function (error) {
-            console.log('ERROR: ', error.red);
+            console.log('ERROR: ', colors.red(error));
         });
     });
 });

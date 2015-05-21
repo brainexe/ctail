@@ -30,3 +30,7 @@ Options:
    -v, --verbose   Print debugging info
    -c, --color     Colorize the output per file  [true]
 ```
+
+License
+=======
+MIT. Please see License file for more details.
