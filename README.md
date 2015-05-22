@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/brainexe/ctail.svg?branch=master)](https://travis-ci.org/brainexe/ctail)
+
 ctail
 =====
 
@@ -18,6 +20,9 @@ ctail /var/log/messages /var/log/syslog
 ctail /var/log/messages --date
 ```
 
+![Example](https://space.mdoetsch.de/index.php/s/JXjauX3O4qls9kQ/download)
+
+
 Options
 =======
 ```
@@ -29,6 +34,13 @@ Options:
    -d, --date      Prefix all lines with current time
    -v, --verbose   Print debugging info
    -c, --color     Colorize the output per file  [true]
+```
+
+Tests
+=====
+
+```
+npm test
 ```
 
 License

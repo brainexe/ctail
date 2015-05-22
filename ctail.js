@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 var
-    Tail = require('tail').Tail,
-    glob = require("glob"),
+    Tail   = require('tail').Tail,
+    glob   = require("glob"),
     colors = require('colors'),
     nomnom = require("nomnom");
 
@@ -38,24 +38,23 @@ var availableColors = [
     'grey', 'yellow', 'red', 'green', 'blue', 'white', 'cyan', 'magenta'
 ];
 
-glob(files, {}, function(error, files) {
+glob(files, function(error, files) {
     if (0 === files.length) {
         console.error(colors.red('No files matched your pattern'));
         return;
     }
 
     files.forEach(function(file) {
-
-        var color = availableColors[colorIdx++ % availableColors.length];
+        var color = colors[availableColors[colorIdx++ % availableColors.length]];
         if (opts.verbose) {
-            console.log(colors[color]("Watch for " + file));
+            console.log(color("Watch for " + file));
         }
 
         var tail = new Tail(file);
 
         tail.on("line", function (data) {
             if (lastFile != file) {
-                console.log('==> ' + colors[color](file) + ' <==');
+                console.log('==> ' + color(file) + ' <==');
                 lastFile = file;
             }
 
@@ -63,7 +62,7 @@ glob(files, {}, function(error, files) {
                 data = getDate() + ': ' + data;
             }
 
-            console.log(colors[color](data));
+            console.log(color(data));
         });
 
         tail.on("error", function (error) {
