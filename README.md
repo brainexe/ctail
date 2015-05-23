@@ -3,7 +3,7 @@
 ctail
 =====
 
-Make your tail mor colorful!
+Make your tail more colorful!
 
 Install
 =======
@@ -37,6 +37,7 @@ Options:
    -n, --lines     Output the last K lines, instead of the last 10;  [10]
    -d, --date      Prefix all lines with current time
    -v, --verbose   Print debugging info
+   -b, --basename  Show the basename only
    -q, --quiet     Never output headers giving file names
    --style         Color style
 

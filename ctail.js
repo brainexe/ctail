@@ -26,6 +26,11 @@ var opts = nomnom
         flag: true,
         help: 'Print debugging info'
     })
+    .option('basename', {
+        abbr: 'b',
+        flag: true,
+        help: 'Show the basename only'
+    })
     .option('quiet', {
         abbr: 'q',
         flag: true,
