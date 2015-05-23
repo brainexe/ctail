@@ -21,6 +21,11 @@ var opts = nomnom
         flag: true,
         help: 'Print debugging info'
     })
+    .option('quiet', {
+        abbr: 'q',
+        flag: true,
+        help: 'Never output headers giving file names'
+    })
     .option('style', {
         list: ['rainbow', 'zebra', 'america', 'random', 'trap'],
         help: 'Color style'

@@ -20,7 +20,7 @@ ctail /var/log/messages /var/log/syslog
 ctail /var/log/messages --date
 ```
 
-![Example](https://space.mdoetsch.de/index.php/apps/files_sharing/ajax/publicpreview.php?x=1307&y=790&a=true&file=ctail.png&t=JXjauX3O4qls9kQ&scalingup=0)
+![Example](https://mdoetsch.de/wp-content/uploads/2015/05/ctail.png)
 
 
 Options
