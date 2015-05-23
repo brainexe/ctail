@@ -11,6 +11,11 @@ var opts = nomnom
         list: true,
         help: 'File(s) to watch at'
     })
+    .option('lines', {
+        abbr: 'n',
+        default: 10,
+        help: 'Output the last K lines, instead of the last 10;'
+    })
     .option('date', {
         abbr: 'd',
         flag: true,
@@ -33,4 +38,4 @@ var opts = nomnom
     .parse();
 
 var ctail = new CTail(opts);
-ctail.tail();
+ctail.tailFiles(opts.files);
