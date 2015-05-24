@@ -19,7 +19,7 @@ ctail logs/*
 ctail /var/log/messages /var/log/syslog
 ctail /var/log/messages --date
 
-# do not show the last 10 lines of the log file
+# do not show the last 5 lines of the log file
 ctail /var/log/messages -n 0
 ```
 
@@ -31,16 +31,15 @@ Options
 ```
 Usage: ctail <files>... [options]
 
-files     File(s) to watch at
+files     File(s) to watch at (glob expressions are allowed)
 
 Options:
-   -n, --lines     Output the last K lines, instead of the last 10;  [10]
-   -d, --date      Prefix all lines with current time
-   -v, --verbose   Print debugging info
-   -b, --basename  Show the basename only
-   -q, --quiet     Never output headers giving file names
-   --style         Color style
-
+   -n, --lines      Output the last K lines, instead of the last 5;  [5]
+   -d, --date       Prefix all lines with current time
+   -v, --verbose    Print debugging info
+   -b, --basename   Show the basename only instead of full file path
+   -q, --quiet      Never output headers giving file names
+   --style          Special color style (rainbow, zebra, america, random, trap). Using one color per file as default
 ```
 
 Tests

@@ -9,12 +9,12 @@ var opts = nomnom
         required: true,
         position: 0,
         list: true,
-        help: 'File(s) to watch at'
+        help: 'File(s) to watch at (glob expressions are allowed)'
     })
     .option('lines', {
         abbr: 'n',
-        default: 10,
-        help: 'Output the last K lines, instead of the last 10;'
+        default: 5,
+        help: 'Output the last K lines, instead of the last 5;'
     })
     .option('date', {
         abbr: 'd',
@@ -29,7 +29,7 @@ var opts = nomnom
     .option('basename', {
         abbr: 'b',
         flag: true,
-        help: 'Show the basename only'
+        help: 'Show the basename only instead of full file path'
     })
     .option('quiet', {
         abbr: 'q',
@@ -38,9 +38,12 @@ var opts = nomnom
     })
     .option('style', {
         list: ['rainbow', 'zebra', 'america', 'random', 'trap'],
-        help: 'Color style'
+        help: 'Special color style (rainbow, zebra, america, random, trap). Using one color per file as default'
     })
     .parse();
 
 var ctail = new CTail(opts);
-ctail.tailFiles(opts.files);
+
+for (var i in opts.files) {
+    ctail.tailFiles(opts.files[i]);
+}
