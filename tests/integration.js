@@ -1,8 +1,8 @@
 var assert = require("assert"),
-    exec = require('child_process').exec;
+    exec   = require('child_process').exec;
 
 describe('Help', function(){
-    describe('#callhelp()', function() {
+    describe('callhelp()', function() {
         var out;
 
         beforeEach(function(done) {

@@ -1,6 +1,6 @@
 {
   "name": "ctail",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Colorized version of 'tail'",
   "main": "ctail.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "colors": "^1.1.0",
     "glob": "^5.0.6",
     "nomnom": "^1.8.1",
-    "tail": "~0.4"
+    "tail-forever": "^0.3.11"
   },
   "bin": {
     "ctail": "./ctail.js"
