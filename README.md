@@ -25,7 +25,6 @@ ctail /var/log/messages -n 0
 
 ![Example](https://mdoetsch.de/wp-content/uploads/2015/05/Selection_001.png)
 
-
 Options
 =======
 ```
@@ -36,10 +35,11 @@ files     File(s) to watch at (glob expressions are allowed)
 Options:
    -n, --lines      Output the last K lines, instead of the last 5;  [5]
    -d, --date       Prefix all lines with current time
-   -v, --verbose    Print debugging info
    -b, --basename   Show the basename only instead of full file path
-   -q, --quiet      Never output headers giving file names
    --style          Special color style (rainbow, zebra, america, random, trap). Using one color per file as default
+   -q, --quiet      Never output headers giving file names
+   -v, --verbose    Print debugging info
+   --no-color       Disable any color
 ```
 
 Tests

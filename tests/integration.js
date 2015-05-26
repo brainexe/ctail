@@ -3,17 +3,22 @@ var assert = require("assert"),
 
 describe('Help', function(){
     describe('callhelp()', function() {
-        var out;
+        it('Show correct help page', function(done) {
+            exec('node ./ctail.js --help --no-color', function(error, stdout, stderr) {
+                assert(stdout.search(/Usage: node ctail\.js/) > 0, 'wrong help:' + stdout);
+                done();
+            });
+        })
+    })
+});
 
-        beforeEach(function(done) {
-            exec('node ./ctail.js --help', function(error, stdout, stderr) {
-                out = stdout;
+describe('ctail', function(){
+    describe('ctail via cli', function() {
+        it('execute ctail without files --no-color', function(done) {
+            exec('node ./ctail.js ', function(error, stdout, stderr) {
+                assert(stdout.search("files argument is required") > 0, 'wrong help:' + stdout);
                 done();
             });
         });
-
-        it('Show correct help page', function() {
-            assert(out.search(/Usage: node ctail.js/) > 0, 'wrong help:' + out);
-        })
     })
 });
