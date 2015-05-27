@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/brainexe/ctail.svg?branch=master)](https://travis-ci.org/brainexe/ctail)
+[![Downloads](https://img.shields.io/npm/dm/ctail.svg)](https://travis-ci.org/brainexe/ctail)
 
 ctail
 =====

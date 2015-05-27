@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+"use strict";
+
 var
     CTail   = require('./lib/ctail'),
     nomnom = require("nomnom");
