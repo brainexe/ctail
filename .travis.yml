@@ -8,9 +8,3 @@ before_script:
   - npm install
   - npm install -g mocha
   - npm test
-
-deploy:
-  provider: npm
-  email: matze@mdoetsch.de
-  api_key:
-    secure: DKhibVcY+W0fa8tLFRtuk9r1bBS1qkrzfE+L398BkhF1Qjs9JLLG60ZEkbEmgBZzTphHQoWzRBLL+iqIvkz2feNNoVUtM6wrPevlqhAYNLFj29baSB5HxfoZwod35bfVRXaYufDcHO8YVfmInBu0hbpCgLnlINBWk+LfytoSBr6NWOQASuX2JrRfrYc8a+tX07sPvyc0ZqV98UieCTPeQrNMuu7Y6jq5aGGkl2VXM5272RXqdqkD8oWHwh2nSo4jcE1vcXfh0rzb3wKLKB8srDaLgaOWsZ4se/QX/1ltIfy8hfxITqjtz3k00cRJ2SxxVBZBs9xS/xPXhBRdvq2hqvodpE2MIpO2LgPTVjsIhbYYv2+ZdKMUNn0qdN+wC5pCNbCy8tE1HzbPhDZma9/2qXgnxp/6tu1Ma+bcACi2USDlEo1A2GOZbUFyycFeNGlE7Mi6biQ66NVILL7w77Tq9nt3C4lFPtFt/jJnC28/4QyUzMRwksk/rZqKBpvuHebx+wCkuxGYtIKbzhdWA8c5G5FZNZh2SFc90lsTndRdR8PNBsUAo4tqokiqgXssUrtNwtvmaqZAcFVHQ5dHc89aPkUNwqUfVTTt11N0q251hczFUoblu7l27XaJ6MqfArGHUpvVjP3Oe3q4RjO14AjF0Lb2R/U9dwXfM5MDbm+NM3Y=

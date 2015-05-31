@@ -1,6 +1,6 @@
 {
   "name": "ctail",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Colorized version of 'tail'",
   "main": "ctail.js",
   "scripts": {
