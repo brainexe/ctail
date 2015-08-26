@@ -3,7 +3,7 @@
 "use strict";
 
 var
-    CTail   = require('./lib/ctail'),
+    CTail  = require('./lib/ctail'),
     nomnom = require("nomnom");
 
 var opts = nomnom
@@ -16,7 +16,11 @@ var opts = nomnom
     .option('lines', {
         abbr: 'n',
         default: 5,
-        help: 'Output the last K lines, instead of the last 5;'
+        help: 'Output the last K lines, instead of the last 5'
+    })
+    .option('exclude', {
+        abbr: 'e',
+        help: 'Excludes certain files;'
     })
     .option('date', {
         abbr: 'd',

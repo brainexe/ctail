@@ -34,7 +34,8 @@ Usage: ctail <files>... [options]
 files     File(s) to watch at (glob expressions are allowed)
 
 Options:
-   -n, --lines      Output the last K lines, instead of the last 5;  [5]
+   -n, --lines      Output the last K lines, instead of the last 5
+   -e, --exclude    Excludes certain files
    -d, --date       Prefix all lines with current time
    -b, --basename   Show the basename only instead of full file path
    --style          Special color style (rainbow, zebra, america, random, trap). Using one color per file as default

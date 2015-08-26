@@ -1,0 +1,12 @@
+{
+  "colors": {
+    "error.log": "red"
+  },
+  "profiles": {
+    "syslog": "/var/log/syslog"
+  },
+  "excludes": [
+    "/\\.svn/",
+    "/\\.git/"
+  ]
+}
