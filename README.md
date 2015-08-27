@@ -44,6 +44,10 @@ Options:
    --no-color       Disable any color
 ```
 
+Config 
+======
+Just put the config.default.json to your ~/.ctail.json.
+
 Tests
 =====
 
