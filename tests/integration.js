@@ -5,7 +5,7 @@ describe('Help', function(){
     describe('callhelp()', function() {
         it('Show correct help page', function(done) {
             exec('./ctail.js --help --no-color', function(error, stdout, stderr) {
-                assert(stdout.search(/Usage: node ctail\.js/) > 0, 'wrong help:' + stdout);
+                assert(stdout.search(/Usage: .*? ctail\.js/) > 0, 'wrong help:' + stdout);
                 done();
             });
         })
