@@ -37,16 +37,17 @@ Options:
    -n, --lines      Output the last K lines, instead of the last 5
    -e, --exclude    Excludes certain files
    -d, --date       Prefix all lines with current time
-   -b, --basename   Show the basename only instead of full file path
+   -p, --fullpath   Show the full path name instead of basename only
    --style          Special color style (rainbow, zebra, america, random, trap). Using one color per file as default
    -q, --quiet      Never output headers giving file names
    -v, --verbose    Print debugging info
    --no-color       Disable any color
 ```
 
-Config 
+Config
 ======
 Just put the config.default.json to your ~/.ctail.json.
+In the section "profiles" you can define shortcuts for log files. E.g. you can use the default "ctail syslog" to watch /var/log/syslog.
 
 Tests
 =====

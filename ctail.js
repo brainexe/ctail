@@ -20,17 +20,17 @@ var opts = nomnom
     })
     .option('exclude', {
         abbr: 'e',
-        help: 'Excludes certain files;'
+        help: 'Excludes certain files'
     })
     .option('date', {
         abbr: 'd',
         flag: true,
         help: 'Prefix all lines with current time'
     })
-    .option('basename', {
-        abbr: 'b',
-        flag: true,
-        help: 'Show the basename only instead of full file path'
+    .option('fullpath', {
+        abbr: 'p',
+        flag: false,
+        help: 'Show the full path name instead of basename only'
     })
     .option('style', {
         list: ['rainbow', 'zebra', 'america', 'random', 'trap'],

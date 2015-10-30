@@ -3,10 +3,12 @@
     "error.log": "red"
   },
   "profiles": {
-    "syslog": "/var/log/syslog"
+    "syslog": "/var/log/syslog",
+    "mail": "/var/log/mail.*"
   },
   "excludes": [
     "/\\.svn/",
-    "/\\.git/"
+    "/\\.git/",
+    "/\\.gz/"
   ]
 }

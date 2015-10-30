@@ -16,6 +16,7 @@
     "watch",
     "monitor",
     "logs",
+    "log",
     "cli"
   ],
   "dependencies": {
