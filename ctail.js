@@ -41,6 +41,11 @@ var opts = nomnom
         flag: true,
         help: 'Never output headers giving file names'
     })
+    .option('notify', {
+        abbr: 'n',
+        flag: true,
+        help: 'Desktop notification in case of new log entries'
+    })
     .option('verbose', {
         abbr: 'v',
         flag: true,

@@ -3,8 +3,9 @@
     "error.log": "red"
   },
   "profiles": {
-    "syslog": "/var/log/syslog",
-    "mail": "/var/log/mail.*"
+    "syslog": "/var/log/syslog /var/log/messages",
+    "mail": "/var/log/mail.*",
+    "nginx": "/var/log/nginx/*.log"
   },
   "excludes": [
     "/\\.svn/",

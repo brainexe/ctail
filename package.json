@@ -1,6 +1,6 @@
 {
   "name": "ctail",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "Colorized version of 'tail'",
   "main": "ctail.js",
   "scripts": {
@@ -17,11 +17,13 @@
     "monitor",
     "logs",
     "log",
-    "cli"
+    "cli",
+    "notification"
   ],
   "dependencies": {
     "colors": "~1.1",
     "glob": "~5.0",
+    "node-notifier": "~4.3",
     "nomnom": "~1.8",
     "tail-forever": "~0.3"
   },
