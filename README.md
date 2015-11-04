@@ -36,7 +36,7 @@ files     File(s) to watch at (glob expressions are allowed)
 Options:
    -n, --lines      Output the last K lines, instead of the last 5
    -e, --exclude    Excludes certain files
-   -n, --notify     Desktop notification in case of new log entries
+   --notify         Desktop notification in case of new log entries
    -d, --date       Prefix all lines with current time
    -p, --fullpath   Show the full path name instead of basename only
    --style          Special color style (rainbow, zebra, america, random, trap). Using one color per file as default

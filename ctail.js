@@ -42,7 +42,6 @@ var opts = nomnom
         help: 'Never output headers giving file names'
     })
     .option('notify', {
-        abbr: 'n',
         flag: true,
         help: 'Desktop notification in case of new log entries'
     })
