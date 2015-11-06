@@ -6,6 +6,10 @@ var
     CTail  = require('./lib/ctail'),
     nomnom = require("nomnom");
 
+var updateNotifier = require('update-notifier');
+var pkg = require('./package.json');
+updateNotifier({pkg: pkg}).notify();
+
 var opts = nomnom
     .option('files', {
         required: true,
