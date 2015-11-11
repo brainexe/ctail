@@ -1,7 +1,7 @@
 {
   "name": "ctail",
-  "version": "1.5.2",
-  "description": "Colorized version of 'tail'",
+  "version": "1.5.3",
+  "description": "Colorized version of 'tail' inclusive desktop notifications",
   "main": "ctail.js",
   "scripts": {
     "test": "mocha tests"
@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "colors": "~1.1",
-    "glob": "~5.0",
+    "glob": "~6.0",
     "node-notifier": "~4.3",
     "nomnom": "~1.8",
     "tail-forever": "~0.3",

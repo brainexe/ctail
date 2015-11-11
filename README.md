@@ -5,6 +5,7 @@ ctail
 =====
 
 Make your tail more colorful!
+Inclusive desktop notification in case of new log entries (optional).
 
 Install
 =======
@@ -18,10 +19,15 @@ Usage
 ```
 ctail logs/*
 ctail /var/log/messages /var/log/syslog
-ctail /var/log/messages --date
 
-# do not show the last 5 lines of the log file
-ctail /var/log/messages -n 0
+# shows a desktop notification in case of new log entries in syslog
+ctail /var/log/syslog --notify
+
+# by default there are aliases for "syslog", "nginx" and "mail". This can be extended in your config.json
+ctail nginx
+
+# show the last 10 lines of the log file
+ctail /var/log/messages -n 10
 ```
 
 ![Example](https://mdoetsch.de/wp-content/uploads/2015/05/Selection_001.png)
