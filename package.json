@@ -1,6 +1,6 @@
 {
   "name": "ctail",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Colorized version of 'tail' inclusive desktop notifications",
   "main": "ctail.js",
   "scripts": {
@@ -22,11 +22,11 @@
   ],
   "dependencies": {
     "colors": "~1.1",
-    "glob": "~6.0",
-    "node-notifier": "~4.3",
+    "glob": "~7.1",
+    "node-notifier": "~4.6",
     "nomnom": "~1.8",
     "tail-forever": "~0.3",
-    "update-notifier": "^0.5.0"
+    "update-notifier": "^1.0.2"
   },
   "bin": {
     "ctail": "./ctail.js"
