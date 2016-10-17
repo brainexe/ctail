@@ -30,7 +30,7 @@ ctail nginx
 ctail /var/log/messages -n 10
 ```
 
-![Example](https://mdoetsch.de/wp-content/uploads/2015/05/Selection_001.png)
+![Example](https://space.mdoetsch.de/index.php/s/JXjauX3O4qls9kQ/download)
 
 Options
 =======
